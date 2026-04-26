@@ -67,7 +67,7 @@ Python  = { level = "advanced", bars = "▓▓▓▓▓▓▓▓▓▓▓▓▓�
 build   = ["GCC", "LLVM", "Clang", "CMake", "Make", "Cargo"]
 debug   = ["GDB", "Valgrind", "strace", "perf", "rr"]
 runtime = ["Docker", "systemd", "tmux"]
-editor  = ["Neovim", "VSCode"]
+editor  = ["Vim", "VSCode"]
 
 [platform]
 primary = "Linux x86_64"
