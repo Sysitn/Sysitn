@@ -1,103 +1,93 @@
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0,13,17,100&height=4&section=header" width="100%"/>
+
+<img src="https://capsule-render.vercel.app/api?type=venom&color=gradient&customColorList=12,20,27&height=200&section=header&text=SYSITN&fontSize=80&fontColor=e040fb&animation=twinkling&fontAlignY=55&desc=systems%20programmer%20%2F%20low-level%20engineer&descAlignY=78&descSize=16&descColor=ce93d8" width="100%"/>
+
 </div>
-
-```
-╭─────────────────────────────────────────────────── kitty ─╮
-│  ●  ●  ●   󰣇  ~  —  bash                          [1/1]  │
-╰───────────────────────────────────────────────────────────╯
-```
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│   ░██████╗ ██╗   ██╗███████╗██╗████████╗███╗   ██╗          │
-│   ██╔════╝ ╚██╗ ██╔╝██╔════╝██║╚══██╔══╝████╗  ██║          │
-│   ╚█████╗   ╚████╔╝ ███████╗██║   ██║   ██╔██╗ ██║          │
-│    ╚═══██╗   ╚██╔╝  ╚════██║██║   ██║   ██║╚██╗██║          │
-│   ██████╔╝    ██║   ███████║██║   ██║   ██║ ╚████║          │
-│   ╚═════╝     ╚═╝   ╚══════╝╚═╝   ╚═╝   ╚═╝  ╚═══╝          │
-│                                                             │
-│              systems programmer  /  low-level               │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=14&duration=2500&pause=800&color=5DE4C7&center=true&vCenter=true&width=480&lines=C+%2F+C%2B%2B+%2F+Rust+%2F+Python+%2F+Bash;Linux+%7C+Low-Level+%7C+Systems;Writing+code+the+machine+respects;&repeat=true" alt="typing"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=15&duration=2000&pause=600&color=E040FB&center=true&vCenter=true&multiline=false&width=500&lines=C+%2F+C%2B%2B+%2F+Rust+%2F+Python+%2F+Bash;Linux+kernels+%26+bare+metal+systems;Writing+code+the+machine+fears;Low-level.+Fast.+Correct." alt="typing svg" />
 
-[![visitors](https://komarev.com/ghpvc/?username=Sysitn&style=flat-square&color=5de4c7&label=visitors)](https://github.com/Sysitn)
+&nbsp;
+
+[![](https://komarev.com/ghpvc/?username=Sysitn&style=for-the-badge&color=7b2d8b&label=VISITORS&labelColor=1a0a2e)](https://github.com/Sysitn)
 
 </div>
 
 ---
 
+<div align="center">
+
 ```
-sysitn@kitty ~ ❯ whoami --verbose
+╭──────────────────────────────────────────────────────────────── kitty ──╮
+│  ◉  ◎  ○    sysitn@arch  ~  ❯                                  [1]  ✦  │
+╰─────────────────────────────────────────────────────────────────────────╯
 ```
 
-```python
-{
-  "handle"     : "Sysitn",
-  "title"      : "Systems Programmer",
-  "focus"      : "low-level engineering · performance · bare metal",
-  "os"         : "Linux  ",
-  "editor"     : "Neovim",
-  "shell"      : "bash / zsh",
-  "philosophy" : "measure twice, compile once"
+</div>
+
+```
+sysitn@arch ~ ❯ cat /proc/self/identity
+```
+
+```rust
+Developer {
+    handle     : "Sysitn",
+    title      : "Systems Programmer",
+    craft      : "low-level · performance · bare metal · kernel space",
+    os         : "Arch Linux  ",
+    shell      : "bash",
+    editor     : "Neovim",
+    philosophy : "measure twice, compile once, never allocate thrice",
+    status     : RUNNING,  // always
 }
 ```
 
 ---
 
 ```
-sysitn@kitty ~ ❯ cat skills.toml
+sysitn@arch ~ ❯ ls --color=always -1 skills/
 ```
 
-```toml
-[languages]
-C       = { level = "expert",   bars = "▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░" }
-Cpp     = { level = "expert",   bars = "▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░" }
-Rust    = { level = "advanced", bars = "▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░" }
-Bash    = { level = "advanced", bars = "▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░" }
-Python  = { level = "advanced", bars = "▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░" }
+```
+ languages/
+ ├──  C              ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░  expert
+ ├──  C++            ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░  expert
+ ├──  Rust           ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░  advanced
+ ├──  Bash           ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░  advanced
+ └──  Python         ▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░  advanced
 
-[toolchain]
-build   = ["GCC", "LLVM", "Clang", "CMake", "Make", "Cargo"]
-debug   = ["GDB", "Valgrind", "strace", "perf", "rr"]
-runtime = ["Docker", "systemd", "tmux"]
-editor  = ["Vim", "VSCode"]
-
-[platform]
-primary = "Linux x86_64"
-kernel  = "fluent in internals"
+ toolchain/
+ ├──  build    →  GCC  LLVM  Clang  CMake  Cargo  Make
+ ├──  debug    →  GDB  Valgrind  strace  perf  rr
+ ├──  runtime  →  Docker  systemd  tmux
+ └──  editor   →  Neovim  VSCode
 ```
 
 ---
 
 ```
-sysitn@kitty ~ ❯ github-stats --user Sysitn
+sysitn@arch ~ ❯ github-stats --user Sysitn --format=pretty
 ```
 
 <div align="center">
 
-<img height="170em" src="https://github-readme-stats.vercel.app/api?username=Sysitn&show_icons=true&hide_border=true&bg_color=00000000&title_color=5de4c7&icon_color=5de4c7&text_color=a6accd&include_all_commits=true&count_private=true"/>
-&nbsp;
-<img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sysitn&layout=compact&hide_border=true&bg_color=00000000&title_color=5de4c7&text_color=a6accd&langs_count=5"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Sysitn&show_icons=true&hide_border=true&bg_color=0d001a&title_color=e040fb&icon_color=ce93d8&text_color=f3e5f5&include_all_commits=true&count_private=true&ring_color=e040fb"/>
+&nbsp;&nbsp;
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sysitn&layout=compact&hide_border=true&bg_color=0d001a&title_color=e040fb&text_color=ce93d8&langs_count=6"/>
 
 </div>
 
 <div align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Sysitn&hide_border=true&background=00000000&stroke=5de4c720&ring=5de4c7&fire=f9a87a&currStreakLabel=5de4c7&sideLabels=a6accd&dates=a6accd&sideNums=ffffff"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Sysitn&hide_border=true&background=0d001a&stroke=e040fb30&ring=e040fb&fire=f48fb1&currStreakLabel=e040fb&sideLabels=ce93d8&dates=9c6da8&sideNums=f3e5f5&currStreakNum=ffffff"/>
 
 </div>
 
 ---
 
 ```
-sysitn@kitty ~ ❯ git log --graph --all --oneline
+sysitn@arch ~ ❯ git log --graph --oneline --decorate --all
 ```
 
 <div align="center">
@@ -109,34 +99,41 @@ sysitn@kitty ~ ❯ git log --graph --all --oneline
 ---
 
 ```
-sysitn@kitty ~ ❯ ping -c 3 sysitn
+sysitn@arch ~ ❯ ping sysitn --resolve
 ```
 
 ```
-PING sysitn — 56 bytes of data
+PING sysitn — resolving...
 
-64 bytes  icmp_seq=1  →  github.com/Sysitn
-64 bytes  icmp_seq=2  →  t.me/Sysitn
+  64 bytes  ↗  github.com/Sysitn   .............. [reachable]
+  64 bytes  ↗  t.me/Sysitn         .............. [reachable]
 
---- rtt min/avg/max = instant ---
+  rtt = instant   loss = 0%   uptime = always
 ```
 
 ---
 
-```
-sysitn@kitty ~ ❯ gcc life.c -o life -O2 -Wall -Wextra
+<div align="left">
 
-life.c:3:12: error: 'free_time' was not declared in this scope
-life.c:7:4:  error: 'motivation' undeclared
-life.c:11:1: note:  did you mean 'deploy_on_friday'?
-life.c:15:8: warning: implicit declaration of 'sleep'
+```
+sysitn@arch ~ ❯ gcc life.c -o life -O3 -march=native -Wall -Wextra -Wpedantic
+```
+
+```
+life.c:3:9:  error: 'free_time' undeclared — did you mean 'free(ptr)'?
+life.c:7:4:  error: 'motivation' has incomplete type
+life.c:11:1: note:  consider: export MOTIVATION=$(curl -s wttr.in)
+life.c:15:8: warning: 'sleep' called with negative value — undefined behaviour
+life.c:19:3: error: 'work_life_balance' — no such file or directory
 
 ld: undefined reference to 'work_life_balance'
 collect2: ld returned 1 exit status
 
-sysitn@kitty ~ ❯ █
+sysitn@arch ~ ❯ █
 ```
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0,13,17,100&height=4&section=footer" width="100%"/>
+&nbsp;
+
+<img src="https://capsule-render.vercel.app/api?type=venom&color=gradient&customColorList=12,20,27&height=120&section=footer&fontSize=14&fontColor=9c6da8&text=keep%20it%20low-level&animation=twinkling&fontAlignY=65" width="100%"/>
+
 </div>
