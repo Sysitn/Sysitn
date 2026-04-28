@@ -4,7 +4,7 @@
 
 <br/>
 
-[![🐍 Snake](https://github.com/Sysitn/Sysitn/actions/workflows/snake.yml/badge.svg)](https://github.com/Sysitn/Sysitn/actions/workflows/snake.yml)&ensp;[![📊 Metrics](https://github.com/Sysitn/Sysitn/actions/workflows/metrics.yml/badge.svg)](https://github.com/Sysitn/Sysitn/actions/workflows/metrics.yml)&ensp;[![🃏 Cards](https://github.com/Sysitn/Sysitn/actions/workflows/profile-cards.yml/badge.svg)](https://github.com/Sysitn/Sysitn/actions/workflows/profile-cards.yml)
+[![🐍 Snake](https://github.com/Sysitn/Sysitn/actions/workflows/snake.yml/badge.svg)](https://github.com/Sysitn/Sysitn/actions/workflows/snake.yml)&ensp;[![🃏 Cards](https://github.com/Sysitn/Sysitn/actions/workflows/profile-cards.yml/badge.svg)](https://github.com/Sysitn/Sysitn/actions/workflows/profile-cards.yml)
 
 </div>
 
@@ -65,20 +65,6 @@ sysitn@github ~/profile ❯ watch -n 21600 snake --devour-grid  # auto: every 6h
 
 <br/>
 
----
-
-```fish
-sysitn@github ~/profile ❯ metrics --render --plugins all  # auto: every 24h via Actions
-```
-
-<div align="center">
-<br/>
-
-<img src="https://raw.githubusercontent.com/Sysitn/Sysitn/output/metrics.svg" width="100%" alt="metrics"/>
-
-</div>
-
-<br/>
 
 ---
 
