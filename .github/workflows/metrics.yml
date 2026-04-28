@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: 📊 Render Metrics
-        uses: lowlevel-club/metrics@latest
+        uses: nicenshtein/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: Sysitn
