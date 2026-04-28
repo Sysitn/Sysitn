@@ -1,53 +1,55 @@
 <div align="center">
 
-<!-- Hero Terminal SVG — file lives in the same repo -->
-<img src="./terminal.svg" width="100%" alt="sysitn terminal"/>
+<img src="./terminal.svg" width="100%" alt="sysitn — terminal"/>
 
 <br/>
 
-<!-- Auto-updated action status badges -->
-[![🐍 Snake](https://github.com/Sysitn/Sysitn/actions/workflows/snake.yml/badge.svg?style=flat)](https://github.com/Sysitn/Sysitn/actions/workflows/snake.yml)&nbsp;
-[![📊 Metrics](https://github.com/Sysitn/Sysitn/actions/workflows/metrics.yml/badge.svg?style=flat)](https://github.com/Sysitn/Sysitn/actions/workflows/metrics.yml)&nbsp;
-[![🃏 Cards](https://github.com/Sysitn/Sysitn/actions/workflows/profile-cards.yml/badge.svg?style=flat)](https://github.com/Sysitn/Sysitn/actions/workflows/profile-cards.yml)
+[![🐍 Snake](https://github.com/Sysitn/Sysitn/actions/workflows/snake.yml/badge.svg)](https://github.com/Sysitn/Sysitn/actions/workflows/snake.yml)&ensp;[![📊 Metrics](https://github.com/Sysitn/Sysitn/actions/workflows/metrics.yml/badge.svg)](https://github.com/Sysitn/Sysitn/actions/workflows/metrics.yml)&ensp;[![🃏 Cards](https://github.com/Sysitn/Sysitn/actions/workflows/profile-cards.yml/badge.svg)](https://github.com/Sysitn/Sysitn/actions/workflows/profile-cards.yml)
 
 </div>
+
+<br/>
 
 ---
 
 ```fish
-sysitn@github ~/profile ❯ ls --color ./stats
+sysitn@github ~/profile ❯ cat stats.log
 ```
 
 <div align="center">
 <br/>
 
-<img height="175em" src="https://github-readme-stats.vercel.app/api?username=Sysitn&show_icons=true&bg_color=0b0018&border_color=7b2fff&title_color=f72585&text_color=e0aaff&icon_color=c77dff&ring_color=7b2fff&hide_border=false&count_private=true&include_all_commits=true"/>
-&nbsp;&nbsp;
-<img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sysitn&layout=compact&bg_color=0b0018&border_color=7b2fff&title_color=f72585&text_color=e0aaff&hide_border=false&langs_count=8"/>
+<img height="178" src="https://github-readme-stats.vercel.app/api?username=Sysitn&show_icons=true&bg_color=0d0018&border_color=6d28d9&title_color=e879a0&text_color=c4b5fd&icon_color=8b5cf6&ring_color=6d28d9&hide_border=false&count_private=true&include_all_commits=true"/>
+&nbsp;
+<img height="178" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sysitn&layout=compact&bg_color=0d0018&border_color=6d28d9&title_color=e879a0&text_color=c4b5fd&hide_border=false&langs_count=8"/>
 
 <br/><br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com?user=Sysitn&theme=tokyonight&background=0b0018&border=7b2fff&stroke=5c0099&ring=f72585&fire=ffbe0b&currStreakNum=f72585&sideNums=c77dff&currStreakLabel=7b2fff&sideLabels=7b2fff&dates=5c0099" height="175em"/>
+<img height="178" src="https://github-readme-streak-stats.herokuapp.com?user=Sysitn&background=0d0018&border=6d28d9&stroke=4a1880&ring=e879a0&fire=db2777&currStreakNum=e879a0&sideNums=c4b5fd&currStreakLabel=8b5cf6&sideLabels=8b5cf6&dates=5a2a80"/>
 
 </div>
+
+<br/>
 
 ---
 
 ```fish
-sysitn@github ~/profile ❯ cat ./activity.log
+sysitn@github ~/profile ❯ git log --graph --all --oneline
 ```
 
 <div align="center">
 <br/>
 
-[![Sysitn's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Sysitn&bg_color=0b0018&color=c77dff&line=7b2fff&point=f72585&area=true&area_color=2d0050&border_color=7b2fff&hide_border=false&custom_title=~/commit_history%20--all)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Sysitn&bg_color=0d0018&color=a78bfa&line=6d28d9&point=e879a0&area=true&area_color=260040&border_color=6d28d9&custom_title=~/commit_history)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 </div>
+
+<br/>
 
 ---
 
 ```fish
-sysitn@github ~/profile ❯ watch -n 21600 ./snake --eat-contributions  # обновляется каждые 6ч
+sysitn@github ~/profile ❯ watch -n 21600 snake --devour-grid  # auto: every 6h via Actions
 ```
 
 <div align="center">
@@ -56,28 +58,32 @@ sysitn@github ~/profile ❯ watch -n 21600 ./snake --eat-contributions  # обн
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/Sysitn/Sysitn/output/snake-dark.svg"/>
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sysitn/Sysitn/output/snake-light.svg"/>
-  <img alt="🐍 purple snake eating commits" src="https://raw.githubusercontent.com/Sysitn/Sysitn/output/snake-dark.svg"/>
+  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/Sysitn/Sysitn/output/snake-dark.svg"/>
 </picture>
 
 </div>
 
+<br/>
+
 ---
 
 ```fish
-sysitn@github ~/profile ❯ ./metrics --render --all-plugins
+sysitn@github ~/profile ❯ metrics --render --plugins all  # auto: every 24h via Actions
 ```
 
 <div align="center">
 <br/>
 
-<img src="https://raw.githubusercontent.com/Sysitn/Sysitn/output/metrics.svg" alt="GitHub Metrics" width="100%"/>
+<img src="https://raw.githubusercontent.com/Sysitn/Sysitn/output/metrics.svg" width="100%" alt="metrics"/>
 
 </div>
+
+<br/>
 
 ---
 
 ```fish
-sysitn@github ~/profile ❯ ./profile-cards --theme dracula
+sysitn@github ~/profile ❯ profile-cards --theme dracula    # auto: daily via Actions
 ```
 
 <div align="center">
@@ -87,28 +93,30 @@ sysitn@github ~/profile ❯ ./profile-cards --theme dracula
 
 <br/>
 
-![](https://raw.githubusercontent.com/Sysitn/Sysitn/output/profile-summary-card-output/dracula/1-repos-per-language.svg)&nbsp;
-![](https://raw.githubusercontent.com/Sysitn/Sysitn/output/profile-summary-card-output/dracula/2-most-commit-language.svg)
+![](https://raw.githubusercontent.com/Sysitn/Sysitn/output/profile-summary-card-output/dracula/1-repos-per-language.svg)&nbsp;![](https://raw.githubusercontent.com/Sysitn/Sysitn/output/profile-summary-card-output/dracula/2-most-commit-language.svg)
 
 <br/>
 
-![](https://raw.githubusercontent.com/Sysitn/Sysitn/output/profile-summary-card-output/dracula/3-stats.svg)&nbsp;
-![](https://raw.githubusercontent.com/Sysitn/Sysitn/output/profile-summary-card-output/dracula/4-productive-time.svg)
+![](https://raw.githubusercontent.com/Sysitn/Sysitn/output/profile-summary-card-output/dracula/3-stats.svg)&nbsp;![](https://raw.githubusercontent.com/Sysitn/Sysitn/output/profile-summary-card-output/dracula/4-productive-time.svg)
 
 </div>
+
+<br/>
 
 ---
 
 ```fish
-sysitn@github ~/profile ❯ cat ./trophies.txt
+sysitn@github ~/profile ❯ trophies --display
 ```
 
 <div align="center">
 <br/>
 
-[![Trophies](https://github-profile-trophy.vercel.app/?username=Sysitn&theme=dracula&no-frame=false&margin-w=8&margin-h=8&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophies](https://github-profile-trophy.vercel.app/?username=Sysitn&theme=dracula&no-frame=false&margin-w=8&column=7)](https://github.com/ryo-ma/github-profile-trophy)
 
 </div>
+
+<br/>
 
 ---
 
@@ -117,35 +125,29 @@ sysitn@github ~/profile ❯ cat src/me.rs
 ```
 
 ```rust
-#[derive(Debug, Clone)]
-struct Sysitn {
-    name:      &'static str,
-    focus:     Vec<&'static str>,
-    languages: Vec<&'static str>,
-    os:        &'static str,
-    currently: &'static str,
-    coffee:    f64,
+// src/me.rs
+
+#[derive(Debug)]
+pub struct Sysitn {
+    pub name:      &'static str,
+    pub focus:     &'static [&'static str],
+    pub languages: &'static [&'static str],
+    pub os:        &'static str,
+    pub currently: &'static str,
+    pub coffee:    f64,
 }
 
-impl Sysitn {
-    fn new() -> Self {
-        Self {
-            name:      "sysitn",
-            focus:     vec!["systems", "kernel", "low-level", "performance"],
-            languages: vec!["C", "C++", "Rust", "Python", "Bash"],
-            os:        "CachyOS Linux 🐧",
-            currently: "writing code that talks directly to the metal ⚡",
-            coffee:    f64::INFINITY,
-        }
-    }
-}
-
-fn main() {
-    let me = Sysitn::new();
-    println!("Hello, world. I am {:?}", me.name);
-    // output: Hello, world. I am "sysitn"
-}
+pub const ME: Sysitn = Sysitn {
+    name:      "sysitn",
+    focus:     &["systems programming", "kernel internals", "performance"],
+    languages: &["C", "C++", "Rust", "Python", "Bash"],
+    os:        "CachyOS Linux 🐧",
+    currently: "writing code that speaks directly to hardware ⚡",
+    coffee:    f64::INFINITY,
+};
 ```
+
+<br/>
 
 ---
 
@@ -156,13 +158,12 @@ sysitn@github ~/profile ❯ echo "see you around" && exit
 <div align="center">
 <br/>
 
-[![GitHub](https://img.shields.io/badge/github-%40Sysitn-7b2fff?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Sysitn)&nbsp;
-[![Views](https://komarev.com/ghpvc/?username=Sysitn&style=for-the-badge&color=7b2fff&label=profile+views)](https://github.com/Sysitn)
+[![github](https://img.shields.io/badge/%40Sysitn-8b5cf6?style=for-the-badge&logo=github&logoColor=white&label=github)](https://github.com/Sysitn)&ensp;[![views](https://komarev.com/ghpvc/?username=Sysitn&style=for-the-badge&color=6d28d9&label=profile+views)](https://github.com/Sysitn)
 
-<br/><br/>
+<br/>
 
 ```
-Connection closed. ⚡
+Connection closed. Stay curious, stay low-level. ⚡
 ```
 
 </div>
