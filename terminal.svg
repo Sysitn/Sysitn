@@ -1,240 +1,272 @@
-<svg width="820" height="510" viewBox="0 0 820 510" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Fira Code','Cascadia Code','Courier New',monospace">
+<svg width="840" height="530" viewBox="0 0 840 530" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','Fira Code','Cascadia Code','Courier New',monospace">
   <defs>
-    <!-- Window gradient -->
-    <linearGradient id="winBg" x1="0" y1="0" x2="0.4" y2="1">
-      <stop offset="0%" stop-color="#0b0018"/>
-      <stop offset="100%" stop-color="#12001f"/>
+
+    <!-- Backgrounds -->
+    <linearGradient id="winBg" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%"   stop-color="#0d0018"/>
+      <stop offset="100%" stop-color="#130020"/>
     </linearGradient>
-    <!-- Title bar gradient -->
-    <linearGradient id="titleBar" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#1c0033"/>
-      <stop offset="50%" stop-color="#200038"/>
-      <stop offset="100%" stop-color="#1c0033"/>
+    <linearGradient id="titleBg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#1c0030"/>
+      <stop offset="50%"  stop-color="#21003a"/>
+      <stop offset="100%" stop-color="#1c0030"/>
     </linearGradient>
-    <!-- Skill bar gradients -->
-    <linearGradient id="barC" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#7b2fff"/>
-      <stop offset="100%" stop-color="#f72585"/>
-    </linearGradient>
-    <linearGradient id="barRust" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#ff6b35"/>
-      <stop offset="100%" stop-color="#ffbe0b"/>
-    </linearGradient>
-    <linearGradient id="barPy" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#00b4d8"/>
-      <stop offset="100%" stop-color="#00f5d4"/>
-    </linearGradient>
-    <linearGradient id="barBash" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#aaff00"/>
-      <stop offset="100%" stop-color="#00f5d4"/>
-    </linearGradient>
-    <!-- Section box background -->
     <linearGradient id="boxBg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#1a0030" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#150026" stop-opacity="0.9"/>
+      <stop offset="0%"   stop-color="#1b002d" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#160026" stop-opacity="1"/>
     </linearGradient>
-    <!-- Glow filter -->
-    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="b"/>
+
+    <!-- Skill bar gradients — plum/rose palette only -->
+    <linearGradient id="barVioletRose" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#e879a0"/>
+    </linearGradient>
+    <linearGradient id="barRose" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#db2777"/>
+      <stop offset="100%" stop-color="#f9a8d4"/>
+    </linearGradient>
+    <linearGradient id="barViolet" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#6d28d9"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="barMauve" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#9d4edd"/>
+      <stop offset="100%" stop-color="#c4b5fd"/>
+    </linearGradient>
+
+    <!-- Subtle glow for accents -->
+    <filter id="glow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <filter id="glowSoft" x="-15%" y="-15%" width="130%" height="130%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="1.2" result="b"/>
+    <filter id="glowFaint" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+
     <style>
       @keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
       .cur { animation: blink 1.1s step-start infinite; }
     </style>
   </defs>
 
-  <!-- ═══════════════════════ WINDOW ═══════════════════════ -->
-  <!-- Outer glow -->
-  <rect x="2" y="2" width="816" height="506" rx="14" fill="none" stroke="#7b2fff" stroke-width="2" opacity="0.25"/>
-  <!-- Main window -->
-  <rect width="820" height="510" rx="13" fill="url(#winBg)"/>
-  <!-- Inner border -->
-  <rect x="0.5" y="0.5" width="819" height="509" rx="13" fill="none" stroke="#3d0066" stroke-width="1"/>
+  <!-- ═══ WINDOW SHELL ═══ -->
+  <!-- Outer glow ring -->
+  <rect x="1" y="1" width="838" height="528" rx="14" fill="none" stroke="#8b5cf6" stroke-width="1.5" opacity="0.18"/>
+  <!-- Window body -->
+  <rect width="840" height="530" rx="13" fill="url(#winBg)"/>
+  <!-- Inner hairline border -->
+  <rect x="0.5" y="0.5" width="839" height="529" rx="13" fill="none" stroke="#3a1060" stroke-width="1"/>
 
-  <!-- ═══════════════════════ TITLE BAR ═══════════════════════ -->
-  <rect width="820" height="46" rx="13" fill="url(#titleBar)"/>
-  <rect y="34" width="820" height="12" fill="#200038"/>
-  <line x1="0" y1="46" x2="820" y2="46" stroke="#4a0080" stroke-width="1" opacity="0.7"/>
+  <!-- ═══ TITLE BAR ═══ -->
+  <rect width="840" height="46" rx="13" fill="url(#titleBg)"/>
+  <rect y="34" width="840" height="12" fill="#21003a"/>
+  <line x1="0" y1="46" x2="840" y2="46" stroke="#3a1060" stroke-width="1" opacity="0.9"/>
   <!-- Traffic lights -->
-  <circle cx="30" cy="23" r="7" fill="#ff5f57"/>
-  <circle cx="54" cy="23" r="7" fill="#febc2e"/>
-  <circle cx="78" cy="23" r="7" fill="#28c840"/>
+  <circle cx="30" cy="23" r="7"   fill="#ff5f57" opacity="0.9"/>
+  <circle cx="54" cy="23" r="7"   fill="#febc2e" opacity="0.9"/>
+  <circle cx="78" cy="23" r="7"   fill="#28c840" opacity="0.9"/>
   <!-- Window title -->
-  <text x="410" y="28" text-anchor="middle" font-size="12.5" fill="#9d4edd" letter-spacing="0.5">sysitn@github — fish — ~/profile</text>
-
-  <!-- ═══════════════════════ LINE 1: PROMPT ═══════════════════════ -->
-  <text y="74" font-size="13.5" font-weight="bold">
-    <tspan x="30" fill="#00f5d4" filter="url(#glow)">sysitn</tspan><tspan fill="#5c0099">@</tspan><tspan fill="#f72585" filter="url(#glow)">github</tspan>
-    <tspan fill="#6a0dad"> ~/profile </tspan>
-    <tspan fill="#c77dff">❯ </tspan>
-    <tspan fill="#aaff00" filter="url(#glowSoft)">neofetch</tspan>
-  </text>
-  <!-- Separator -->
-  <line x1="30" y1="84" x2="790" y2="84" stroke="#2d0050" stroke-width="1"/>
-
-  <!-- ═══════════════════════ NEOFETCH BLOCK ═══════════════════════ -->
-
-  <!-- LEFT: ASCII "S" logo with neon colors -->
-  <text x="36" y="109" font-size="14" font-weight="bold" fill="#f72585" filter="url(#glow)">████████████</text>
-  <text x="36" y="129" font-size="14" font-weight="bold" fill="#d4006c">██</text>
-  <text x="36" y="149" font-size="14" font-weight="bold" fill="#9d4edd" filter="url(#glow)">██████████</text>
-  <text x="36" y="169" font-size="14" font-weight="bold" fill="#7b2fff">          ██</text>
-  <text x="36" y="189" font-size="14" font-weight="bold" fill="#c77dff" filter="url(#glow)">████████████</text>
-
-  <!-- Color swatches row -->
-  <rect x="36"  y="202" width="16" height="14" rx="2" fill="#0b0018"/>
-  <rect x="56"  y="202" width="16" height="14" rx="2" fill="#7b2fff"/>
-  <rect x="76"  y="202" width="16" height="14" rx="2" fill="#f72585"/>
-  <rect x="96"  y="202" width="16" height="14" rx="2" fill="#00f5d4"/>
-  <rect x="116" y="202" width="16" height="14" rx="2" fill="#aaff00"/>
-  <rect x="136" y="202" width="16" height="14" rx="2" fill="#ffbe0b"/>
-  <rect x="156" y="202" width="16" height="14" rx="2" fill="#3a86ff"/>
-  <rect x="176" y="202" width="16" height="14" rx="2" fill="#e0aaff"/>
-
-  <!-- RIGHT: System info -->
-  <!-- Username -->
-  <text font-size="13.5" font-weight="bold">
-    <tspan x="230" y="109" fill="#00f5d4" filter="url(#glow)">sysitn</tspan><tspan fill="#5c0099">@</tspan><tspan fill="#f72585" filter="url(#glow)">github</tspan>
-  </text>
-  <!-- Thin separator -->
-  <line x1="230" y1="118" x2="650" y2="118" stroke="#3d0066" stroke-width="1"/>
-
-  <!-- Info rows -->
-  <text x="230" y="137" font-size="13">
-    <tspan fill="#c77dff" font-weight="bold">OS</tspan><tspan fill="#3d0066">........</tspan><tspan fill="#e0aaff">CachyOS x86_64</tspan>
-  </text>
-  <text x="230" y="157" font-size="13">
-    <tspan fill="#c77dff" font-weight="bold">Host</tspan><tspan fill="#3d0066">......</tspan><tspan fill="#e0aaff">MSI GF63 Thin 11UD</tspan>
-  </text>
-  <text x="230" y="177" font-size="13">
-    <tspan fill="#c77dff" font-weight="bold">Kernel</tspan><tspan fill="#3d0066">....</tspan><tspan fill="#aaff00" filter="url(#glowSoft)">Linux 7.0.1-cachyos</tspan>
-  </text>
-  <text x="230" y="197" font-size="13">
-    <tspan fill="#c77dff" font-weight="bold">Shell</tspan><tspan fill="#3d0066">.....</tspan><tspan fill="#00f5d4" filter="url(#glowSoft)">fish 4.6.0</tspan>
-  </text>
-  <text x="230" y="217" font-size="13">
-    <tspan fill="#c77dff" font-weight="bold">GPU</tspan><tspan fill="#3d0066">.......</tspan><tspan fill="#e0aaff">RTX 3050 Ti  +  Intel UHD</tspan>
+  <text x="420" y="28" text-anchor="middle" font-size="12" fill="#9b7fd4" letter-spacing="0.6">
+    sysitn@github  —  fish  —  ~/profile
   </text>
 
-  <!-- Right-side extra info (second column within right panel) -->
-  <text x="530" y="137" font-size="13">
-    <tspan fill="#9d4edd" font-weight="bold">WM</tspan><tspan fill="#3d0066">.....</tspan><tspan fill="#e0aaff">Mutter</tspan>
+  <!-- ═══ PROMPT LINE 1 ═══ -->
+  <text y="73" font-size="13" font-weight="bold" letter-spacing="0.2">
+    <tspan x="30" fill="#a78bfa" filter="url(#glow)">sysitn</tspan>
+    <tspan fill="#4a1880">@</tspan>
+    <tspan fill="#e879a0" filter="url(#glow)">github</tspan>
+    <tspan fill="#5a2a80" xml:space="preserve"> ~/profile </tspan>
+    <tspan fill="#8b5cf6">❯ </tspan>
+    <tspan fill="#c4b5fd" filter="url(#glowFaint)">neofetch</tspan>
   </text>
-  <text x="530" y="157" font-size="13">
-    <tspan fill="#9d4edd" font-weight="bold">DE</tspan><tspan fill="#3d0066">.....</tspan><tspan fill="#e0aaff">GNOME 50.1</tspan>
+  <line x1="30" y1="83" x2="810" y2="83" stroke="#260040" stroke-width="1"/>
+
+  <!-- ═══ NEOFETCH: LEFT — ASCII S ═══ -->
+  <!-- Row 1 -->
+  <text x="36" y="107" font-size="13.5" font-weight="bold" fill="#e879a0" filter="url(#glowFaint)">  ████████████</text>
+  <!-- Row 2 -->
+  <text x="36" y="127" font-size="13.5" font-weight="bold" fill="#c084fc">  ██</text>
+  <!-- Row 3 -->
+  <text x="36" y="147" font-size="13.5" font-weight="bold" fill="#a78bfa" filter="url(#glowFaint)">  ████████░░</text>
+  <!-- Row 4 -->
+  <text x="36" y="167" font-size="13.5" font-weight="bold" fill="#c084fc">          ██</text>
+  <!-- Row 5 -->
+  <text x="36" y="187" font-size="13.5" font-weight="bold" fill="#db2777" filter="url(#glowFaint)">  ████████████</text>
+
+  <!-- Colour swatches -->
+  <rect x="36"  y="200" width="14" height="12" rx="3" fill="#0d0018"/>
+  <rect x="54"  y="200" width="14" height="12" rx="3" fill="#3a1060"/>
+  <rect x="72"  y="200" width="14" height="12" rx="3" fill="#6d28d9"/>
+  <rect x="90"  y="200" width="14" height="12" rx="3" fill="#8b5cf6"/>
+  <rect x="108" y="200" width="14" height="12" rx="3" fill="#a78bfa"/>
+  <rect x="126" y="200" width="14" height="12" rx="3" fill="#e879a0"/>
+  <rect x="144" y="200" width="14" height="12" rx="3" fill="#f9a8d4"/>
+  <rect x="162" y="200" width="14" height="12" rx="3" fill="#f0e6ff"/>
+
+  <!-- ═══ NEOFETCH: RIGHT — system info ═══ -->
+  <!-- Username header -->
+  <text font-size="13" font-weight="bold" letter-spacing="0.2">
+    <tspan x="230" y="107" fill="#a78bfa" filter="url(#glow)">sysitn</tspan>
+    <tspan fill="#4a1880">@</tspan>
+    <tspan fill="#e879a0" filter="url(#glow)">github</tspan>
   </text>
-  <text x="530" y="177" font-size="13">
-    <tspan fill="#9d4edd" font-weight="bold">RAM</tspan><tspan fill="#3d0066">....</tspan><tspan fill="#ffbe0b">15.32 GiB</tspan>
+  <line x1="230" y1="116" x2="640" y2="116" stroke="#3a1060" stroke-width="1"/>
+
+  <!-- Info rows — labels in lavender, values in near-white -->
+  <text x="230" y="134" font-size="12.5">
+    <tspan fill="#a78bfa" font-weight="bold">OS</tspan>
+    <tspan fill="#3a1060" dx="2">············</tspan>
+    <tspan fill="#e8d5f5" dx="-4">CachyOS x86_64</tspan>
   </text>
-  <text x="530" y="197" font-size="13">
-    <tspan fill="#9d4edd" font-weight="bold">Term</tspan><tspan fill="#3d0066">....</tspan><tspan fill="#e0aaff">Ptyxis 50.1</tspan>
+  <text x="230" y="153" font-size="12.5">
+    <tspan fill="#a78bfa" font-weight="bold">Host</tspan>
+    <tspan fill="#3a1060" dx="2">··········</tspan>
+    <tspan fill="#e8d5f5" dx="-4">MSI GF63 Thin 11UD</tspan>
   </text>
-  <text x="530" y="217" font-size="13">
-    <tspan fill="#9d4edd" font-weight="bold">Disk</tspan><tspan fill="#3d0066">....</tspan><tspan fill="#e0aaff">btrfs / 195 GiB</tspan>
+  <text x="230" y="172" font-size="12.5">
+    <tspan fill="#a78bfa" font-weight="bold">Kernel</tspan>
+    <tspan fill="#3a1060" dx="2">········</tspan>
+    <tspan fill="#c4b5fd" dx="-4">Linux 7.0.1-cachyos</tspan>
+  </text>
+  <text x="230" y="191" font-size="12.5">
+    <tspan fill="#a78bfa" font-weight="bold">Shell</tspan>
+    <tspan fill="#3a1060" dx="2">·········</tspan>
+    <tspan fill="#e879a0" dx="-4">fish 4.6.0</tspan>
+  </text>
+  <text x="230" y="210" font-size="12.5">
+    <tspan fill="#a78bfa" font-weight="bold">GPU</tspan>
+    <tspan fill="#3a1060" dx="2">···········</tspan>
+    <tspan fill="#e8d5f5" dx="-4">RTX 3050 Ti  +  Intel UHD</tspan>
   </text>
 
-  <!-- ═══════════════════════ SEPARATOR ═══════════════════════ -->
-  <line x1="30" y1="234" x2="790" y2="234" stroke="#2d0050" stroke-width="1"/>
+  <!-- Second info column -->
+  <text x="530" y="134" font-size="12.5">
+    <tspan fill="#c084fc" font-weight="bold">WM</tspan>
+    <tspan fill="#3a1060" dx="2">·······</tspan>
+    <tspan fill="#e8d5f5" dx="-4">Mutter / Wayland</tspan>
+  </text>
+  <text x="530" y="153" font-size="12.5">
+    <tspan fill="#c084fc" font-weight="bold">DE</tspan>
+    <tspan fill="#3a1060" dx="2">·······</tspan>
+    <tspan fill="#e8d5f5" dx="-4">GNOME 50.1</tspan>
+  </text>
+  <text x="530" y="172" font-size="12.5">
+    <tspan fill="#c084fc" font-weight="bold">RAM</tspan>
+    <tspan fill="#3a1060" dx="2">······</tspan>
+    <tspan fill="#f9a8d4" dx="-4">15.32 GiB</tspan>
+  </text>
+  <text x="530" y="191" font-size="12.5">
+    <tspan fill="#c084fc" font-weight="bold">Disk</tspan>
+    <tspan fill="#3a1060" dx="2">······</tspan>
+    <tspan fill="#e8d5f5" dx="-4">btrfs  195 GiB</tspan>
+  </text>
+  <text x="530" y="210" font-size="12.5">
+    <tspan fill="#c084fc" font-weight="bold">Term</tspan>
+    <tspan fill="#3a1060" dx="2">······</tspan>
+    <tspan fill="#e8d5f5" dx="-4">Ptyxis 50.1</tspan>
+  </text>
 
-  <!-- ═══════════════════════ SKILLS SECTION ═══════════════════════ -->
-  <!-- Section box background -->
-  <rect x="22" y="242" width="776" height="134" rx="8" fill="url(#boxBg)" stroke="#330055" stroke-width="1"/>
+  <!-- ═══ SKILLS BOX ═══ -->
+  <line x1="30" y1="228" x2="810" y2="228" stroke="#260040" stroke-width="1"/>
+  <rect x="22" y="236" width="796" height="150" rx="8" fill="url(#boxBg)" stroke="#3a1060" stroke-width="1"/>
 
-  <!-- Section header with glow -->
-  <text x="36" y="263" font-size="12" fill="#9d4edd" font-weight="bold" letter-spacing="1" filter="url(#glowSoft)">~/skills --verbose --proficiency</text>
-  <line x1="36" y1="270" x2="790" y2="270" stroke="#3d0066" stroke-width="0.8"/>
+  <!-- Section label -->
+  <text x="38" y="257" font-size="11.5" fill="#8b5cf6" font-weight="bold" letter-spacing="1.5">~/skills  ──────────────────────────────────────────────────────</text>
 
-  <!-- LEFT skills column -->
-  <!-- C / C++ -->
-  <text x="36" y="291" font-size="12.5" fill="#e0aaff" font-weight="bold">C / C++</text>
-  <rect x="120" y="279" width="170" height="11" rx="5" fill="#1a0030"/>
-  <rect x="120" y="279" width="170" height="11" rx="5" fill="url(#barC)" opacity="0.95"/>
-  <text x="298" y="290" font-size="11" fill="#f72585" filter="url(#glowSoft)">  expert ⚡</text>
+  <!-- LEFT skill column -->
+  <!-- C/C++ -->
+  <text x="38"  y="281" font-size="12" fill="#e8d5f5">C / C++</text>
+  <rect x="118" y="270" width="2" height="14" rx="1" fill="#3a1060"/>
+  <rect x="124" y="270" width="180" height="13" rx="6" fill="#1e0034"/>
+  <rect x="124" y="270" width="180" height="13" rx="6" fill="url(#barVioletRose)" opacity="0.9"/>
+  <text x="312" y="281" font-size="11" fill="#e879a0">  expert</text>
 
   <!-- Rust -->
-  <text x="36" y="313" font-size="12.5" fill="#e0aaff" font-weight="bold">Rust   </text>
-  <rect x="120" y="301" width="152" height="11" rx="5" fill="#1a0030"/>
-  <rect x="120" y="301" width="152" height="11" rx="5" fill="url(#barRust)" opacity="0.95"/>
-  <text x="280" y="312" font-size="11" fill="#ffbe0b">  advanced 🦀</text>
+  <text x="38"  y="305" font-size="12" fill="#e8d5f5">Rust   </text>
+  <rect x="124" y="294" width="156" height="13" rx="6" fill="#1e0034"/>
+  <rect x="124" y="294" width="156" height="13" rx="6" fill="url(#barRose)" opacity="0.9"/>
+  <text x="288" y="305" font-size="11" fill="#f9a8d4">  advanced</text>
 
   <!-- Python -->
-  <text x="36" y="335" font-size="12.5" fill="#e0aaff" font-weight="bold">Python </text>
-  <rect x="120" y="323" width="130" height="11" rx="5" fill="#1a0030"/>
-  <rect x="120" y="323" width="130" height="11" rx="5" fill="url(#barPy)" opacity="0.95"/>
-  <text x="258" y="334" font-size="11" fill="#00f5d4">  proficient 🐍</text>
+  <text x="38"  y="329" font-size="12" fill="#e8d5f5">Python </text>
+  <rect x="124" y="318" width="138" height="13" rx="6" fill="#1e0034"/>
+  <rect x="124" y="318" width="138" height="13" rx="6" fill="url(#barViolet)" opacity="0.9"/>
+  <text x="270" y="329" font-size="11" fill="#a78bfa">  proficient</text>
 
   <!-- Bash -->
-  <text x="36" y="357" font-size="12.5" fill="#e0aaff" font-weight="bold">Bash   </text>
-  <rect x="120" y="345" width="150" height="11" rx="5" fill="#1a0030"/>
-  <rect x="120" y="345" width="150" height="11" rx="5" fill="url(#barBash)" opacity="0.95"/>
-  <text x="278" y="356" font-size="11" fill="#aaff00">  advanced 🐚</text>
+  <text x="38"  y="353" font-size="12" fill="#e8d5f5">Bash   </text>
+  <rect x="124" y="342" width="156" height="13" rx="6" fill="#1e0034"/>
+  <rect x="124" y="342" width="156" height="13" rx="6" fill="url(#barMauve)" opacity="0.9"/>
+  <text x="288" y="353" font-size="11" fill="#c4b5fd">  advanced</text>
 
-  <!-- RIGHT skills column: OS/Tools -->
+  <!-- RIGHT skill column -->
   <!-- Linux -->
-  <text x="430" y="291" font-size="12.5" fill="#e0aaff" font-weight="bold">Linux  </text>
-  <rect x="514" y="279" width="164" height="11" rx="5" fill="#1a0030"/>
-  <rect x="514" y="279" width="164" height="11" rx="5" fill="url(#barC)" opacity="0.85"/>
-  <text x="686" y="290" font-size="11" fill="#f72585" filter="url(#glowSoft)">  native 🐧</text>
+  <text x="440"  y="281" font-size="12" fill="#e8d5f5">Linux  </text>
+  <rect x="520" y="270" width="170" height="13" rx="6" fill="#1e0034"/>
+  <rect x="520" y="270" width="170" height="13" rx="6" fill="url(#barVioletRose)" opacity="0.85"/>
+  <text x="698" y="281" font-size="11" fill="#e879a0">  native</text>
 
   <!-- GDB -->
-  <text x="430" y="313" font-size="12.5" fill="#e0aaff" font-weight="bold">GDB    </text>
-  <rect x="514" y="301" width="130" height="11" rx="5" fill="#1a0030"/>
-  <rect x="514" y="301" width="130" height="11" rx="5" fill="url(#barRust)" opacity="0.85"/>
-  <text x="652" y="312" font-size="11" fill="#ffbe0b">  debug wizard</text>
+  <text x="440"  y="305" font-size="12" fill="#e8d5f5">GDB    </text>
+  <rect x="520" y="294" width="138" height="13" rx="6" fill="#1e0034"/>
+  <rect x="520" y="294" width="138" height="13" rx="6" fill="url(#barRose)" opacity="0.85"/>
+  <text x="666" y="305" font-size="11" fill="#f9a8d4">  debug wizard</text>
 
   <!-- CMake -->
-  <text x="430" y="335" font-size="12.5" fill="#e0aaff" font-weight="bold">CMake  </text>
-  <rect x="514" y="323" width="120" height="11" rx="5" fill="#1a0030"/>
-  <rect x="514" y="323" width="120" height="11" rx="5" fill="url(#barPy)" opacity="0.85"/>
-  <text x="642" y="334" font-size="11" fill="#00f5d4">  proficient</text>
+  <text x="440"  y="329" font-size="12" fill="#e8d5f5">CMake  </text>
+  <rect x="520" y="318" width="120" height="13" rx="6" fill="#1e0034"/>
+  <rect x="520" y="318" width="120" height="13" rx="6" fill="url(#barViolet)" opacity="0.85"/>
+  <text x="648" y="329" font-size="11" fill="#a78bfa">  proficient</text>
 
   <!-- Git -->
-  <text x="430" y="357" font-size="12.5" fill="#e0aaff" font-weight="bold">Git    </text>
-  <rect x="514" y="345" width="140" height="11" rx="5" fill="#1a0030"/>
-  <rect x="514" y="345" width="140" height="11" rx="5" fill="url(#barBash)" opacity="0.85"/>
-  <text x="662" y="356" font-size="11" fill="#aaff00">  advanced</text>
+  <text x="440"  y="353" font-size="12" fill="#e8d5f5">Git    </text>
+  <rect x="520" y="342" width="150" height="13" rx="6" fill="#1e0034"/>
+  <rect x="520" y="342" width="150" height="13" rx="6" fill="url(#barMauve)" opacity="0.85"/>
+  <text x="678" y="353" font-size="11" fill="#c4b5fd">  advanced</text>
 
-  <!-- ═══════════════════════ STATUS SECTION ═══════════════════════ -->
-  <line x1="30" y1="386" x2="790" y2="386" stroke="#2d0050" stroke-width="1"/>
+  <!-- ═══ STATUS PILLS ═══ -->
+  <line x1="30" y1="396" x2="810" y2="396" stroke="#260040" stroke-width="1"/>
 
-  <!-- Status pills -->
-  <rect x="30"  y="396" width="108" height="22" rx="11" fill="#1a0030" stroke="#7b2fff" stroke-width="1"/>
-  <text x="84"  y="412" text-anchor="middle" font-size="11.5" fill="#c77dff">⚙ sys programmer</text>
+  <rect x="30"  y="406" width="116" height="22" rx="11" fill="#1e0034" stroke="#6d28d9" stroke-width="1"/>
+  <text x="88"  y="421" text-anchor="middle" font-size="11" fill="#a78bfa" letter-spacing="0.3">⚙ sys programmer</text>
 
-  <rect x="148" y="396" width="108" height="22" rx="11" fill="#1a0030" stroke="#f72585" stroke-width="1"/>
-  <text x="202" y="412" text-anchor="middle" font-size="11.5" fill="#f72585">🔥 low-level addict</text>
+  <rect x="154" y="406" width="114" height="22" rx="11" fill="#1e0034" stroke="#db2777" stroke-width="1"/>
+  <text x="211" y="421" text-anchor="middle" font-size="11" fill="#e879a0" letter-spacing="0.3">🔥 low-level</text>
 
-  <rect x="266" y="396" width="90" height="22" rx="11" fill="#1a0030" stroke="#00f5d4" stroke-width="1"/>
-  <text x="311" y="412" text-anchor="middle" font-size="11.5" fill="#00f5d4">🐧 linux btw</text>
+  <rect x="276" y="406" width="96" height="22" rx="11" fill="#1e0034" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="324" y="421" text-anchor="middle" font-size="11" fill="#c4b5fd" letter-spacing="0.3">🐧 linux btw</text>
 
-  <rect x="366" y="396" width="82" height="22" rx="11" fill="#1a0030" stroke="#aaff00" stroke-width="1"/>
-  <text x="407" y="412" text-anchor="middle" font-size="11.5" fill="#aaff00">🦀 rust lover</text>
+  <rect x="380" y="406" width="88" height="22" rx="11" fill="#1e0034" stroke="#9d4edd" stroke-width="1"/>
+  <text x="424" y="421" text-anchor="middle" font-size="11" fill="#c084fc" letter-spacing="0.3">🦀 rust</text>
 
-  <rect x="458" y="396" width="100" height="22" rx="11" fill="#1a0030" stroke="#ffbe0b" stroke-width="1"/>
-  <text x="508" y="412" text-anchor="middle" font-size="11.5" fill="#ffbe0b">⚡ kernel hacker</text>
+  <rect x="476" y="406" width="104" height="22" rx="11" fill="#1e0034" stroke="#e879a0" stroke-width="1"/>
+  <text x="528" y="421" text-anchor="middle" font-size="11" fill="#f9a8d4" letter-spacing="0.3">⚡ kernel</text>
 
-  <rect x="568" y="396" width="98" height="22" rx="11" fill="#1a0030" stroke="#9d4edd" stroke-width="1"/>
-  <text x="617" y="412" text-anchor="middle" font-size="11.5" fill="#9d4edd">☕ coffee: ∞</text>
+  <!-- ═══ FINAL PROMPTS ═══ -->
+  <line x1="30" y1="438" x2="810" y2="438" stroke="#260040" stroke-width="1"/>
 
-  <!-- ═══════════════════════ FINAL PROMPT ═══════════════════════ -->
-  <line x1="30" y1="428" x2="790" y2="428" stroke="#2d0050" stroke-width="1"/>
-
-  <text y="452" font-size="13.5" font-weight="bold">
-    <tspan x="30" fill="#00f5d4" filter="url(#glow)">sysitn</tspan><tspan fill="#5c0099">@</tspan><tspan fill="#f72585" filter="url(#glow)">github</tspan>
-    <tspan fill="#6a0dad"> ~/profile </tspan>
-    <tspan fill="#c77dff">❯ </tspan>
-    <tspan fill="#e0aaff">git commit -m </tspan><tspan fill="#aaff00" filter="url(#glowSoft)">"feat: be awesome, write fast code"</tspan>
+  <text y="461" font-size="13" font-weight="bold" letter-spacing="0.2">
+    <tspan x="30" fill="#a78bfa" filter="url(#glow)">sysitn</tspan>
+    <tspan fill="#4a1880">@</tspan>
+    <tspan fill="#e879a0" filter="url(#glow)">github</tspan>
+    <tspan fill="#5a2a80" xml:space="preserve"> ~/profile </tspan>
+    <tspan fill="#8b5cf6">❯ </tspan>
+    <tspan fill="#e8d5f5">git commit -m </tspan>
+    <tspan fill="#c4b5fd" filter="url(#glowFaint)">"feat: write fast, think in bits"</tspan>
   </text>
 
-  <text y="476" font-size="13.5" font-weight="bold">
-    <tspan x="30" fill="#00f5d4" filter="url(#glow)">sysitn</tspan><tspan fill="#5c0099">@</tspan><tspan fill="#f72585" filter="url(#glow)">github</tspan>
-    <tspan fill="#6a0dad"> ~/profile </tspan>
-    <tspan fill="#c77dff">❯ </tspan>
-    <tspan class="cur" fill="#7b2fff" filter="url(#glow)">█</tspan>
+  <text y="488" font-size="12" fill="#7a5f8f">
+    <tspan x="30">[main 3f7ca1b]  feat: write fast, think in bits</tspan>
   </text>
+
+  <text y="511" font-size="13" font-weight="bold" letter-spacing="0.2">
+    <tspan x="30" fill="#a78bfa" filter="url(#glow)">sysitn</tspan>
+    <tspan fill="#4a1880">@</tspan>
+    <tspan fill="#e879a0" filter="url(#glow)">github</tspan>
+    <tspan fill="#5a2a80" xml:space="preserve"> ~/profile </tspan>
+    <tspan fill="#8b5cf6">❯ </tspan>
+    <tspan class="cur" fill="#8b5cf6" filter="url(#glow)">█</tspan>
+  </text>
+
 </svg>
